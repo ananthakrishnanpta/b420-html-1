@@ -1,0 +1,185 @@
+/* 1. I need to reset the padding and margin so that 
+the browser defaults do not work. 
+I am choosing to set the box-sizing to border-box value.
+This is more comfortable for me to work with.
+For these stylings, I use the universal selector (*)
+*/
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+
+    /* styling for site header */
+    header#site-header {
+        height: 50px;
+        color: rgb(255, 255, 255);
+        background-color: black;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        /* Fixing the header to the top of viewport */
+        position: fixed;
+        width: 100%;
+        top: 0;
+
+        /* border: 1px solid; */
+        div.site-logo {
+            height: 100%;
+
+            img {
+                height: 100%;
+            }
+        }
+
+        h1 {
+            color: rgb(148, 251, 255);
+        }
+
+        nav {
+            margin-right: 10px;
+            height: 100%;
+            /* border: 1px solid; */
+            display: flex;
+            align-items: center;
+            padding: 0;
+
+            a {
+                color: rgb(108, 233, 255);
+                display: flex;
+                font-size: large;
+                align-items: center;
+                padding: 2px;
+                height: 100%;
+                text-decoration: none;
+                transition-duration: 2s;
+
+            }
+
+            a:hover {
+                background-color: white;
+                color: rgb(0, 88, 34);
+                transition-duration: 1s;
+            }
+
+        }
+
+    }
+
+    main {
+        section#products {
+
+
+            width: 80%;
+            margin: auto;
+            margin-top: 50px;
+            margin-bottom: 30px;
+
+            .container {
+                /* styling for individual card */
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+
+                div.card {
+                    height: 260px;
+                    width: 200px;
+                    margin: 10px;
+                    /* border: 1px solid; */
+                    box-shadow: 3px 2px 2px 1px rgb(143, 143, 143);
+                    border-radius: 2px;
+                    overflow: hidden;
+
+                    .card-img {
+                        height: 50%;
+
+                        /* border: 1px solid; */
+                        img {
+                            height: 100%;
+                            width: 100%;
+                            object-fit: cover;
+                        }
+                    }
+
+                    .card-body {
+                        height: auto;
+                        padding: 10px 10px 10px 10px;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+
+                        div.card-text {
+                            width: 100%;
+                            height: 80px;
+
+                            h2 {
+                                text-overflow: ellipsis;
+                                overflow: hidden;
+                                white-space: nowrap;
+                                width: 100%;
+                            }
+
+                            h2,
+                            span {
+                                color: rgb(45, 45, 51);
+                            }
+
+                            span {
+                                margin-top: 4px;
+                                font-size: 15px;
+                                padding: 2px;
+                                width: 100%;
+                                display: block;
+                            }
+
+
+                        }
+
+                        button {
+                            background-color: rgb(12, 131, 228);
+                            color: white;
+                            font-size: medium;
+                            border: none;
+                            padding: 6px;
+                            border-radius: 10px;
+                        }
+
+                        button:hover {
+                            background-color: rgb(255, 101, 101);
+                        }
+
+                        button:active {
+                            background-color: rgb(155, 182, 6);
+                            color: black;
+                        }
+
+                    }
+                }
+
+                div.card:hover {
+                    box-shadow: 2px 3px 2px 1px rgb(117, 117, 117);
+                    transition-duration: 2s;
+                    /* transform: rotate(360deg); */
+                }
+            }
+        }
+    }
+
+    footer {
+        background-color: black;
+        color: white;
+        height: 20px;
+        font-size: medium;
+        text-align: center;
+        font-weight: 600;
+
+        /* Fixing the footer to the bottom of viewport */
+        position: fixed;
+        width: 100%;
+        bottom: 0;
+    }
+}

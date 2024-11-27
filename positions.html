@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: rgb(0, 167, 167);
+
+            header#site-header {
+                background-color: black;
+                color: white;
+                height: 30px;
+                font-size: larger;
+                text-align: center;
+                font-weight: 900;
+                z-index: 10;
+
+
+                /* Fixing the header to the top of viewport */
+                position: fixed;
+                width: 100%;
+                top: 0;
+            }
+
+            main {
+
+                margin-top: 30px;
+                margin-bottom: 30px;
+
+                section#a1 {
+                    div.parent {
+                        border: 1px solid;
+                        height: 200px;
+                        width: 400px;
+                        margin: auto;
+                        position: relative;
+
+
+                        div.child {
+                            border: 1px solid green;
+                            background-color: yellow;
+                            height: 50%;
+                            /* width: 25%; */
+                            aspect-ratio: 1/1;
+                            position: absolute;
+                            right: 0;
+                            bottom: 0;
+                            border-radius: 50%;
+
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                        }
+
+                        div.sticky-child {
+                            height: 50%;
+                            aspect-ratio: 1/1;
+                            background-color: rgb(9, 255, 0);
+                            position: sticky;
+                            top: 200px;
+                        }
+                    }
+                }
+                .dummy {
+                    div {
+                        width: 80%;
+                        margin: auto;
+                        height: 800px;
+                        background-color: aliceblue;
+                    }
+
+                }
+            }
+
+            footer#site-footer {
+                background-color: black;
+                color: white;
+                height: 30px;
+                font-size: larger;
+                text-align: center;
+                font-weight: 900;
+
+                /* Fixing the footer to the bottom of viewport */
+                position: fixed;
+                width: 100%;
+                bottom: 0;
+                z-index: 10;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header id="site-header">
+        This is my header
+    </header>
+    <main>
+        <section class="dummy">
+            <div>
+
+            </div>
+        </section>
+        <section id="a1">
+            <div class="parent">
+                <div class="child">
+                    <p>
+                        A
+                    </p>
+                </div>
+                <div class="sticky-child">
+                    <p>
+                        S
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section class="dummy">
+            <div>
+
+            </div>
+        </section>
+    </main>
+    <footer id="site-footer">
+        This is my footer
+    </footer>
+</body>
+
+</html>

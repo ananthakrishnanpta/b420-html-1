@@ -75,7 +75,7 @@ body {
 
     main {
         .blur {
-            filter: blur(5px);
+            filter: blur(2px);
         }
         section#products {
 
@@ -265,5 +265,8 @@ body {
         width: 100%;
         bottom: 0;
         z-index: 10;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 }

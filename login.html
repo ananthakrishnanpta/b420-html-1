@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shopping Site</title>
+    <title>Login | Shopping Site</title>
     <link rel="shortcut icon" href="static/images/icons/car-shop-logo.ico" type="image/x-icon">
     <link rel="stylesheet" href="static/css/style.css">
 </head>
@@ -18,16 +18,15 @@
         <h1>
             The Car Shop
         </h1>
-
         <nav>
             <a href="index.html">Home</a>
-            <a href="login.html">Login</a>
+
             <a href="">Sign up</a>
         </nav>
     </header>
     <!-- site header ends -->
     <main>
-        <section id="products">
+        <section id="products" class="blur">
             <div class="container">
 
                 <!-- a single product card -->
@@ -50,7 +49,7 @@
                     </div>
                 </div>
                 <!-- product card ends -->
-                 <!-- a single product card -->
+                <!-- a single product card -->
                 <div class="card">
                     <div class="card-img">
                         <img src="media/products/m2.jpg.jpg" alt="">
@@ -70,7 +69,7 @@
                     </div>
                 </div>
                 <!-- product card ends -->
-                 <!-- a single product card -->
+                <!-- a single product card -->
                 <div class="card">
                     <div class="card-img">
                         <img src="media/products/m2.jpg.jpg" alt="">
@@ -90,7 +89,7 @@
                     </div>
                 </div>
                 <!-- product card ends -->
-                 <!-- a single product card -->
+                <!-- a single product card -->
                 <div class="card">
                     <div class="card-img">
                         <img src="media/products/m2.jpg.jpg" alt="">
@@ -110,7 +109,7 @@
                     </div>
                 </div>
                 <!-- product card ends -->
-                 <!-- a single product card -->
+                <!-- a single product card -->
                 <div class="card">
                     <div class="card-img">
                         <img src="media/products/m2.jpg.jpg" alt="">
@@ -130,7 +129,7 @@
                     </div>
                 </div>
                 <!-- product card ends -->
-                 <!-- a single product card -->
+                <!-- a single product card -->
                 <div class="card">
                     <div class="card-img">
                         <img src="media/products/m2.jpg.jpg" alt="">
@@ -150,7 +149,7 @@
                     </div>
                 </div>
                 <!-- product card ends -->
-                 <!-- a single product card -->
+                <!-- a single product card -->
                 <div class="card">
                     <div class="card-img">
                         <img src="media/products/m2.jpg.jpg" alt="">
@@ -170,7 +169,7 @@
                     </div>
                 </div>
                 <!-- product card ends -->
-                 <!-- a single product card -->
+                <!-- a single product card -->
                 <div class="card">
                     <div class="card-img">
                         <img src="media/products/m2.jpg.jpg" alt="">
@@ -190,7 +189,7 @@
                     </div>
                 </div>
                 <!-- product card ends -->
-                 <!-- a single product card -->
+                <!-- a single product card -->
                 <div class="card">
                     <div class="card-img">
                         <img src="media/products/m2.jpg.jpg" alt="">
@@ -210,7 +209,7 @@
                     </div>
                 </div>
                 <!-- product card ends -->
-                 <!-- a single product card -->
+                <!-- a single product card -->
                 <div class="card">
                     <div class="card-img">
                         <img src="media/products/m2.jpg.jpg" alt="">
@@ -233,6 +232,28 @@
 
             </div>
 
+        </section>
+
+        <section id="login">
+            <div>
+                <form action="" method="post" class="login-form">
+                    <header>
+                        <h1>Login</h1>
+                    </header>
+                    <div>
+                        <label for="username-input" class="hide">Username:</label>
+                        <input type="text" name="" placeholder="Enter your username" id="username-input" required>
+                    </div>
+                    <div>
+                        <label for="pwd-input" class="hide">Password</label>
+                        <input type="password" id="pwd-input" placeholder="Enter your password" required>
+                    </div>
+
+                    <button type="submit">Login</button>
+
+                </form>
+
+            </div>
         </section>
     </main>
 

@@ -304,12 +304,16 @@ body {
     }
 }
 
+/* styling for screen-width <= 480px */
 @media screen and (max-width: 480px) {
     header#site-header {
+        h1 {
+            font-size: small;
+        }
         nav {
             a {
                 font-size: smaller;
-                border: 1px solid white;
+                /* border: 1px solid white; */
             }
         }
     }
